@@ -1,0 +1,64 @@
+.animated-share-btn {
+  background: linear-gradient(30deg, #e54fe2, #4d0bf6);
+  color: #fff;
+  font-family: "Montserrat";
+  border: 0;
+  padding: 16px 40px;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  border-radius: 40px;
+  transition: 0.3s;
+}
+
+
+.animated-share-btn-text {
+  margin-right: 7px;
+}
+
+.animated-share-btn-text,
+#animated-share-btn-icon {
+  display: inline-block;
+  transition: 0.3s;
+}
+
+#animated-share-btn-icon {
+  margin-left: 7px;
+  transition-delay: 100ms;
+}
+
+.animated-share-btn-socials {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  bottom: 0;
+  transform: translateY(100%);
+}
+
+.animated-share-btn-socials > a {
+  color: #fff;
+  transition: 0.3s;
+}
+.animated-share-btn-socials > a:nth-child(2) {
+  transition-delay: 150ms;
+}
+.animated-share-btn-socials > a:nth-child(3) {
+  transition-delay: 250ms;
+}
+
+.animated-share-btn:hover {
+  border-radius: 0px;
+}
+
+.animated-share-btn:hover .animated-share-btn-text,
+.animated-share-btn:hover #animated-share-btn-icon,
+.animated-share-btn:hover .animated-share-btn-socials > a {
+  transform: translateY(-40px);
+}
+.animated-share-btn-socials > a:hover {
+  opacity: 0.6;
+}
